@@ -1,0 +1,27 @@
+spring:
+  config:
+    activate:
+      on-profile: sit
+
+  devtools:
+    livereload:
+      enabled: true
+
+  datasource:
+    url: ${SIT_DB_URL}
+    username: ${SIT_DB_USERNAME}
+    password: ${SIT_DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 8
+      driver-class-name: org.postgresql.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
