@@ -2,6 +2,8 @@ package com.example.petmount.dtos;
 
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 @Data
 @Builder
 @Getter
@@ -11,4 +13,5 @@ import lombok.*;
 public class PetDTO {
     private Long id;
     private String name;
+    private LocalDateTime birth;
 }
