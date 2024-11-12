@@ -20,7 +20,7 @@ public class PetController {
     private final PetService petService;
     private final ModelMapper modelMapper;
 
-    @GetMapping
+    @GetMapping("")
     public ResponseEntity<?> getAllPets() {
         return ResponseEntity.ok(new PetResponse(petService.findAll().size(), petService.findAll().stream()
                 .map(pet -> modelMapper.map(pet, PetDTO.class))
