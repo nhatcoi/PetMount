@@ -5,3 +5,6 @@
 - Split application configuration dev, prod, test.
 - build jar with gradle
 - model mapper
+- docker
+- docker-compose
+- cors
