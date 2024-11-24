@@ -6,7 +6,3 @@ create table pets
     name  varchar,
     birth timestamp
 );
-
-alter table pets
-    owner to coinhat;
-
