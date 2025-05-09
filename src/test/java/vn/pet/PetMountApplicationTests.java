@@ -1,4 +1,4 @@
-package com.example.petmount;
+package vn.pet;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

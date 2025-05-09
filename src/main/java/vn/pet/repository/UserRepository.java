@@ -1,6 +1,6 @@
-package com.example.petmount.repository;
+package vn.pet.repository;
 
-import com.example.petmount.entity.User;
+import vn.pet.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

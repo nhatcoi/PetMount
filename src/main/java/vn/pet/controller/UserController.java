@@ -1,8 +1,8 @@
-package com.example.petmount.controller;
+package vn.pet.controller;
 
-import com.example.petmount.dto.UserRequest;
-import com.example.petmount.dto.UserResponse;
-import com.example.petmount.service.UserService;
+import vn.pet.dto.UserRequest;
+import vn.pet.dto.UserResponse;
+import vn.pet.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;

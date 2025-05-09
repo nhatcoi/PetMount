@@ -1,4 +1,4 @@
-package com.example.petmount.dto;
+package vn.pet.dto;
 
 import lombok.*;
 

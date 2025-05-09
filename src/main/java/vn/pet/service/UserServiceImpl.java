@@ -1,7 +1,7 @@
-package com.example.petmount.service;
+package vn.pet.service;
 
-import com.example.petmount.entity.User;
-import com.example.petmount.repository.UserRepository;
+import vn.pet.entity.User;
+import vn.pet.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

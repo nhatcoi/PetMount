@@ -1,6 +1,6 @@
-package com.example.petmount.service;
+package vn.pet.service;
 
-import com.example.petmount.entity.User;
+import vn.pet.entity.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
