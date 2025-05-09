@@ -1,4 +1,4 @@
-package com.example.petmount.configurations;
+package com.example.petmount.configuration;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

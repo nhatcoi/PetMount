@@ -1,4 +1,4 @@
-package com.example.petmount.dtos;
+package com.example.petmount.dto;
 
 import lombok.*;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class PetResponse {
+public class UserResponse {
     private long totalCount;
-    private List<PetDTO> pets;
+    private List<UserRequest> pets;
 }

@@ -1,8 +1,8 @@
-package com.example.petmount.controlles;
+package com.example.petmount.controller;
 
-import com.example.petmount.dtos.PetDTO;
-import com.example.petmount.dtos.PetResponse;
-import com.example.petmount.services.PetService;
+import com.example.petmount.dto.UserRequest;
+import com.example.petmount.dto.UserResponse;
+import com.example.petmount.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
@@ -17,13 +17,13 @@ import java.util.stream.Collectors;
 @RequestMapping("/api/pets")
 public class PetController {
 
-    private final PetService petService;
+    private final UserService petService;
     private final ModelMapper modelMapper;
 
     @GetMapping("")
     public ResponseEntity<?> getAllPets() {
-        return ResponseEntity.ok(new PetResponse(petService.findAll().size(), petService.findAll().stream()
-                .map(pet -> modelMapper.map(pet, PetDTO.class))
+        return ResponseEntity.ok(new UserResponse(petService.findAll().size(), petService.findAll().stream()
+                .map(pet -> modelMapper.map(pet, UserRequest.class))
                 .collect(Collectors.toList())));
     }
 }

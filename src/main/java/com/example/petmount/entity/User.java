@@ -1,4 +1,4 @@
-package com.example.petmount.entities;
+package com.example.petmount.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Entity
 @Table(name = "pets")
-public class Pet {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

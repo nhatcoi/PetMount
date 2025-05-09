@@ -1,4 +1,4 @@
-package com.example.petmount.dtos;
+package com.example.petmount.dto;
 
 import lombok.*;
 
@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class PetDTO {
+public class UserRequest {
     private Long id;
     private String name;
     private LocalDateTime birth;
