@@ -11,5 +11,5 @@ import java.util.List;
 @AllArgsConstructor
 public class UserResponse {
     private long totalCount;
-    private List<UserRequest> pets;
+    private List<UserRequest> users;
 }

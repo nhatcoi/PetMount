@@ -7,5 +7,5 @@ import java.util.List;
 
 @Service
 public interface UserService {
-    List<User> findAll();
+    List<User> getAllUsers();
 }

@@ -14,16 +14,16 @@ import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/api/pets")
-public class PetController {
+@RequestMapping("/api/v1/users")
+public class UserController {
 
-    private final UserService petService;
+    private final UserService userService;
     private final ModelMapper modelMapper;
 
     @GetMapping("")
-    public ResponseEntity<?> getAllPets() {
-        return ResponseEntity.ok(new UserResponse(petService.findAll().size(), petService.findAll().stream()
-                .map(pet -> modelMapper.map(pet, UserRequest.class))
+    public ResponseEntity<?> getAllUsers() {
+        return ResponseEntity.ok(new UserResponse(userService.getAllUsers().size(), userService.getAllUsers().stream()
+                .map(user -> modelMapper.map(user, UserRequest.class))
                 .collect(Collectors.toList())));
     }
 }
